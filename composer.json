@@ -1,0 +1,63 @@
+{
+    "name": "straylightagency/majestic-framework",
+    "description": "The Majestic Framework for WordPress",
+    "type": "framework",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.3",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-dom": "*",
+        "ext-libxml": "*",
+        "ext-simplexml": "*",
+        "ext-pdo": "*",
+        "illuminate/cache": "^11",
+        "illuminate/console": "^11",
+        "illuminate/container": "^11",
+        "illuminate/database": "^11",
+        "illuminate/contracts": "^11",
+        "illuminate/encryption": "^11",
+        "illuminate/events": "^11",
+        "illuminate/filesystem": "^11",
+        "illuminate/http": "^11",
+        "illuminate/log": "^11",
+        "illuminate/queue": "^11",
+        "illuminate/routing": "^11",
+        "illuminate/support": "^11",
+        "illuminate/validation": "^11",
+        "illuminate/view": "^11",
+        "illuminate/auth": "^11",
+        "illuminate/config": "^11",
+        "illuminate/mail": "^11",
+        "illuminate/hashing": "^11",
+        "illuminate/pagination": "^11",
+        "illuminate/redis": "^11",
+        "illuminate/testing": "^11",
+        "illuminate/collections": "^11",
+        "illuminate/cookie": "^11.0@dev",
+        "illuminate/notifications": "^11.0@dev",
+        "illuminate/broadcasting": "^11.0@dev",
+        "vlucas/phpdotenv": "^5.5@dev",
+        "composer/semver": "^3.0@dev",
+        "fakerphp/faker": "2.0.x-dev",
+        "league/flysystem": "4.x-dev"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anthony Pauwels",
+            "email": "hello@anthonypauwels.be",
+            "homepage": "https://anthonypauwels.be/"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Daedelus\\": "/src/Daedelus",
+            "Illuminate\\": "/src/Illuminate"
+        },
+        "files": [
+            "/src/Daedelus/helpers.php",
+            "/src/Illuminate/helpers.php"
+        ]
+    }
+}
