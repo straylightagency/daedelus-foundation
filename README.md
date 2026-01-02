@@ -1,1 +1,1 @@
-# Majestic Framework
+# Majestic 

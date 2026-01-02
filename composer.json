@@ -1,7 +1,7 @@
 {
-    "name": "straylightagency/majestic-framework",
+    "name": "straylightagency/majestic-foundation",
     "description": "The Majestic Framework for WordPress",
-    "type": "framework",
+    "type": "foundation",
     "minimum-stability": "dev",
     "require": {
         "php": ">=8.3",
