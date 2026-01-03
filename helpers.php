@@ -982,25 +982,6 @@ if (! function_exists('trans_choice')) {
     }
 }
 
-if (! function_exists('__')) {
-    /**
-     * Translate the given message.
-     *
-     * @param  string|null  $key
-     * @param  array  $replace
-     * @param  string|null  $locale
-     * @return string|array|null
-     */
-    function __($key = null, $replace = [], $locale = null)
-    {
-        if (is_null($key)) {
-            return $key;
-        }
-
-        return trans($key, $replace, $locale);
-    }
-}
-
 if (! function_exists('url')) {
     /**
      * Generate a url for the application.
@@ -1060,5 +1041,38 @@ if (! function_exists('view')) {
         }
 
         return $factory->make($view, $data, $mergeData);
+    }
+}
+
+if (! function_exists('_t')) {
+    /**
+     * Translate the given message.
+     *
+     * __ is already used by WordPress and throw an error "Cannot redeclare __() ..."
+     *
+     * @param null $key
+     * @param array $replace
+     * @param null $locale
+     * @return Application|array|string|\Illuminate\Contracts\Translation\Translator|null
+     */
+    function _t($key = null, array $replace = [], $locale = null): Application|array|string|\Illuminate\Contracts\Translation\Translator|null
+    {
+        if (is_null($key)) {
+            return $key;
+        }
+
+        return trans($key, $replace, $locale);
+    }
+}
+
+if (! function_exists('laravel_cloud')) {
+    /**
+     * Missing function on the original helpers.php
+     *
+     * @return false
+     */
+    function laravel_cloud():false
+    {
+        return false;
     }
 }
