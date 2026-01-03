@@ -11,36 +11,39 @@
         "ext-libxml": "*",
         "ext-simplexml": "*",
         "ext-pdo": "*",
+        "illuminate/auth": "^11",
+        "illuminate/broadcasting": "^11",
+        "illuminate/bus": "^11",
         "illuminate/cache": "^11",
+        "illuminate/collections": "^11",
+        "illuminate/conditionable": "^11",
+        "illuminate/config": "^11",
         "illuminate/console": "^11",
         "illuminate/container": "^11",
-        "illuminate/database": "^11",
         "illuminate/contracts": "^11",
+        "illuminate/cookie": "^11",
+        "illuminate/database": "^11",
         "illuminate/encryption": "^11",
         "illuminate/events": "^11",
         "illuminate/filesystem": "^11",
+        "illuminate/hashing": "^11",
         "illuminate/http": "^11",
         "illuminate/log": "^11",
-        "illuminate/queue": "^11",
-        "illuminate/routing": "^11",
-        "illuminate/support": "^11",
-        "illuminate/validation": "^11",
-        "illuminate/view": "^11",
-        "illuminate/auth": "^11",
-        "illuminate/config": "^11",
+        "illuminate/macroable": "^11",
         "illuminate/mail": "^11",
-        "illuminate/hashing": "^11",
+        "illuminate/notifications": "^11",
         "illuminate/pagination": "^11",
+        "illuminate/pipeline": "^11",
+        "illuminate/process": "^11",
+        "illuminate/queue": "^11",
         "illuminate/redis": "^11",
+        "illuminate/routing": "^11",
+        "illuminate/session": "^11",
+        "illuminate/support": "^11",
         "illuminate/testing": "^11",
-        "illuminate/collections": "^11",
-        "illuminate/cookie": "^11.0@dev",
-        "illuminate/notifications": "^11.0@dev",
-        "illuminate/broadcasting": "^11.0@dev",
-        "vlucas/phpdotenv": "^5.5@dev",
-        "composer/semver": "^3.0@dev",
-        "fakerphp/faker": "2.0.x-dev",
-        "league/flysystem": "4.x-dev"
+        "illuminate/translation": "^11",
+        "illuminate/validation": "^11",
+        "illuminate/view": "^11"
     },
     "license": "MIT",
     "authors": [
@@ -52,10 +55,10 @@
     ],
     "autoload": {
         "psr-4": {
-            "Illuminate\\Foundation\\": "/"
+            "Illuminate\\Foundation\\": ""
         },
         "files": [
-            "/helpers.php"
+            "helpers.php"
         ]
     }
 }
