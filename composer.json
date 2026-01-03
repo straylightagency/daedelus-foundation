@@ -1,5 +1,5 @@
 {
-    "name": "straylightagency/majestic-foundation",
+    "name": "daedelus/foundation",
     "description": "The Majestic Framework for WordPress",
     "type": "foundation",
     "minimum-stability": "dev",
@@ -46,18 +46,16 @@
     "authors": [
         {
             "name": "Anthony Pauwels",
-            "email": "hello@anthonypauwels.be",
-            "homepage": "https://anthonypauwels.be/"
+            "email": "anthony@straylightagency.be",
+            "homepage": "https://straylightagency.be/"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Daedelus\\": "/src/Daedelus",
-            "Illuminate\\": "/src/Illuminate"
+            "Illuminate\\Foundation\\": "/"
         },
         "files": [
-            "/src/Daedelus/helpers.php",
-            "/src/Illuminate/helpers.php"
+            "/helpers.php"
         ]
     }
 }
